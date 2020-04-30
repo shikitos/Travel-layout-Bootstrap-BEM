@@ -78,46 +78,107 @@
                     <a href="tel:+91254587485" class="yellow">+91 254 587 485</a>
                     <h1>Book a Ticket & Just Leave!</h1>
                     <p>Travel is the movement of people between relatively distant geographical locations, <br> and can involve travel by foot,bicycle, automobile, train, boat, bus.</p>
-                    <button class="yellow">&rarr; Get ticket!</button>
+                    <button class="yellow" id="openModal">&rarr; Get ticket!</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="search" class="search">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <button id="search-categories">Hotel</button>
-                    <button id="search-categories">Tours</button>
-                    <button id="search-categories">Package</button>
+    <div id="myModal" class="modal">
+        <div class="container modal-content">
+            <!-- Tab links -->
+            <div class="row tab">
+                <div class="col-lg-12 tab-col">
+                    <button class="tablinks" id="hotel-button" onclick="openType(event, 'Hotel')">Hotel</button>
+                    <button class="tablinks" id="tours-button" onclick="openType(event, 'Tours')">Tours</button>
+                    <button class="tablinks" id="packages-button" onclick="openType(event, 'Packages')">Package</button>
+                    <span class="close">&times;</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 text-left search-forms d-flex" style=" flex-direction: row;">
-                    <form action=" " style="display: inline-flex;">
+            <!-- Tab content -->
+            <div class="row tabcontent" id="Hotel">
+                <div class="col-lg-12 text-left modal-forms">
+                    <form action=" ">
                         <div>
-                            <h4>Where?</h4>
-                            <input type="text " placeholder="Choose location "></div>
+                            <h4>Country</h4>
+                            <input type="text" placeholder="Choose location">
+                        </div>
                         <div>
-                            <h4>Which?</h4>
-                            <input type="text " placeholder="Choose city "></div>
+                            <h4>Place</h4>
+                            <input type="text" placeholder="Choose city">
+                        </div>
                         <div>
                             <h4>Check in</h4>
-                            <input type="text " placeholder="YY-DD-MM "></div>
+                            <input type="text" placeholder="YY-DD-MM ">
+                        </div>
                         <div>
                             <h4>Check out</h4>
-                            <input type="text " placeholder="YY-DD-MM "></div>
+                            <input type="text" placeholder="YY-DD-MM ">
+                        </div>
+                        <div>
+                            <button class="tab-button" onclick="sendButton()">
+                                Search
+                            </button>
+                        </div>
                     </form>
                 </div>
-                <div class="col-lg-1 text-right ">
-                    <button>
-                        Search
-                    </button>
+            </div>
+            <div class="row tabcontent" id="Tours">
+                <div class="col-lg-12 text-left  modal-forms d-flex">
+                    <form action=" ">
+                        <div>
+                            <h4>Where?</h4>
+                            <input type="text " placeholder="Choose location ">
+                        </div>
+                        <div>
+                            <h4>Which?</h4>
+                            <input type="text " placeholder="Choose city ">
+                        </div>
+                        <div>
+                            <h4>Check in</h4>
+                            <input type="text " placeholder="YY-DD-MM ">
+                        </div>
+                        <div>
+                            <h4>Check out</h4>
+                            <input type="text " placeholder="YY-DD-MM ">
+                        </div>
+                        <div>
+                            <button class="tab-button" onclick="sendButton()">
+                                    Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row tabcontent" id="Packages">
+                <div class="col-lg-12 text-left modal-forms d-flex">
+                    <form action=" ">
+                        <div>
+                            <h4>Destination</h4>
+                            <input type="text " placeholder="Choose location ">
+                        </div>
+                        <div>
+                            <h4>Сity</h4>
+                            <input type="text " placeholder="Choose city ">
+                        </div>
+                        <div>
+                            <h4>From</h4>
+                            <input type="text " placeholder="YY-DD-MM ">
+                        </div>
+                        <div>
+                            <h4>To</h4>
+                            <input type="text " placeholder="YY-DD-MM ">
+                        </div>
+                        <div>
+                            <button class="tab-button" onclick="sendButton()">
+                                    Search
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section id="popular " class="popular">
         <div class="container ">
@@ -434,6 +495,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 
 </body>
 
