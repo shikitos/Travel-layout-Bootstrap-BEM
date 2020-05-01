@@ -300,8 +300,7 @@ header {
     color: rgba(97, 90, 90, 0.651);
 }
 
-.tab button:hover,
-.active {
+.tab button:hover {
     background-color: #ffdd00;
     color: #fff;
 }
@@ -365,7 +364,216 @@ header {
 /*========================POPULAR==============================*/
 
 
+/*Text*/
+
+.popular-text p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 100px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.popular-text h2 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+
+/*Carousel*/
+
+.popular-carousel {
+    margin-bottom: 150px;
+}
+
+
+/*Indicators*/
+
+.carousel-item {
+    height: 370px;
+}
+
+.carousel-indicators {
+    margin-top: 5000px;
+}
+
+.carousel-indicators li {
+    background-color: #ffdd00;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #ffdd00;
+    background-color: transparent;
+}
+
+.carousel-indicators li.active {
+    background-color: #ffdd00;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+
+/*Cards*/
+
+
+/*Side cards bg*/
+
+.carousel-item__opacity {
+    width: 100%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+/*Middle card bg*/
+
+.carousel-item__yellow {
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 192, 1, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: 0.5;
+}
+
+
+/*
+.carousel-item__yellow a {
+    filter: opacity(0.7);
+    margin-bottom: 10px;
+}
+
+.carousel-item__yellow a,
+.carousel-item__yellow img:hover {
+    transform: scale(1.05);
+}
+*/
+
+.item1-1,
+.item2-1,
+.item3-1,
+.item1-2,
+.item2-2,
+.item3-2,
+.item1-3,
+.item2-3,
+.item3-3 {
+    max-width: 32.1%;
+    height: 370px;
+    vertical-align: middle;
+    position: relative
+}
+
+.item1-1,
+.item2-1,
+.item1-2,
+.item2-2,
+.item1-3,
+.item2-3 {
+    margin-right: 16px;
+}
+
+.item1-1 h5,
+.item2-1 h5,
+.item3-1 h5,
+.item1-2 h5,
+.item2-2 h5,
+.item3-2 h5,
+.item1-3 h5,
+.item2-3 h5,
+.item3-3 h5 {
+    margin-top: 25px;
+    color: #333;
+    z-index: 15;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item2-1 h5,
+.item1-2 h5,
+.item3-2 h5,
+.item2-3 h5 {
+    margin-top: 20px;
+}
+
+.item1-1 p,
+.item2-1 p,
+.item3-1 p,
+.item1-2 p,
+.item2-2 p,
+.item3-2 p,
+.item1-3 p,
+.item2-3 p,
+.item3-3 p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+
+/*1 slide*/
+
+.item1-1 {
+    background: url(../img/popular-img1-1.jpg) no-repeat center top / cover;
+}
+
+.item2-1 {
+    background: url(../img/popular-img2-1.jpg) no-repeat center top / cover;
+}
+
+.item3-1 {
+    background: url(../img/popular-img3-1.jpg) no-repeat center top / cover;
+}
+
+
+/*2 slide*/
+
+.item1-2 {
+    background: url(../img/popular-img1-2.jpg) no-repeat center top / cover;
+}
+
+.item2-2 {
+    background: url(../img/popular-img2-2.jpg) no-repeat center top / cover;
+}
+
+.item3-2 {
+    background: url(../img/popular-img3-2.jpg) no-repeat center top / cover;
+}
+
+
+/*3 slide*/
+
+.item1-3 {
+    background: url(../img/popular-img1-3.jpg) no-repeat center top / cover;
+}
+
+.item2-3 {
+    background: url(../img/popular-img2-3.jpg) no-repeat center top / cover;
+}
+
+.item3-3 {
+    background: url(../img/popular-img3-3.jpg) no-repeat center top / cover;
+}
+
+
 /*========================DESTINATIONS=========================*/
+
+.destionations-title {
+    background: url(../img/destination_bgtext.png) no-repeat center top / contain;
+}
 
 
 /*========================HONEYMOON============================*/
