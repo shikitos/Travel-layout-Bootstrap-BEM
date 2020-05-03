@@ -53,19 +53,19 @@
                 <div class="col-lg-6 text-right h-20 align-self-auto">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#popular">Home</a>
                         </li>
                         <li>
-                            <a href="">Tours</a>
+                            <a href="#destinations">Tours</a>
                         </li>
                         <li>
-                            <a href="">Package</a>
+                            <a href="#honeymoon">Package</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#contacts">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    <section id="popular " class="popular">
+    <section id="popular" class="popular">
         <div class="container ">
             <div class="row popular-heading">
                 <div class="col-lg-12 text-left popular-text">
@@ -494,51 +494,60 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center getticket">
-                    <span class="close">&times;</span>
-                    <div id="carousel-4" class="carousel slide" data-ride="carousel">
+
+                    <div id="carousel-modal" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="honeymoon-carousel-item__left">
-                                    <img src="img/honeymoon-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
+                                <!--<div class="row">-->
+                                <!--<div class="col-lg-6 text-left">-->
+                                <div class="getticket-carousel-item__left">
+                                    <img src="img/getticket-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
                                 </div>
-                                <div class="honeymoon-carousel-item__right text-left">
+                                <!-- </div>-->
+                                <!--<div class="col-lg-6">-->
+                                <div class="getticket-carousel-item__right text-left">
+                                    <span class="close-2">&times;</span>
+                                    <h3>Italy, Rome</h3>
+                                    <p>3 day, 2 night</p>
+                                    <p>Visit most 4 popular place</p>
+                                    <span>&#36; 1500</span>
+                                    <button>&rarr; Get ticket</button>
+                                </div>
+                                <!--</div>-->
+                                <!-- </div>-->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="getticket-carousel-item__left">
+                                    <img src="img/getticket-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
+                                </div>
+                                <div class="getticket-carousel-item__right text-left">
+                                    <span class="close-2">&times;</span>
                                     <h3>St. Lucia</h3>
-                                    <span>&#36; 980</span>
                                     <p>4 day, 5 night</p>
-                                    <p>If you're seeking a luxurious Caribbean honeymoon, <br> look no further than St. Lucia.</p>
-                                    <button>More details</button>
+                                    <p>Visit most 4 popular place</p>
+                                    <span>&#36; 980</span>
+                                    <button>&rarr; Get ticket</button>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="honeymoon-carousel-item__left">
-                                    <img src="img/honeymoon-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
+                                <div class="getticket-carousel-item__left">
+                                    <img src="img/getticket-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
                                 </div>
-                                <div class="honeymoon-carousel-item__right text-left">
+                                <div class="getticket-carousel-item__right text-left">
+                                    <span class="close-2">&times;</span>
                                     <h3>St. Lucia</h3>
-                                    <span>&#36; 980</span>
                                     <p>4 day, 5 night</p>
-                                    <p>If you're seeking a luxurious Caribbean honeymoon, <br> look no further than St. Lucia.</p>
-                                    <button>More details</button>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="honeymoon-carousel-item__left">
-                                    <img src="img/honeymoon-img1.jpg" class="d-block" alt="Honeymoon St. Lucia">
-                                </div>
-                                <div class="honeymoon-carousel-item__right text-left">
-                                    <h3>St. Lucia</h3>
+                                    <p>Visit most 4 popular place</p>
                                     <span>&#36; 980</span>
-                                    <p>4 day, 5 night</p>
-                                    <p>If you're seeking a luxurious Caribbean honeymoon, <br> look no further than St. Lucia.</p>
-                                    <button>More details</button>
+                                    <button>&rarr; Get ticket</button>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-modal" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-4" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-modal" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -554,7 +563,7 @@
                 <div class="col-lg-12 text-center bigdeal__title">
                     <h2>It’s a big deal!</h2>
                     <p>subscribe our news letter</p>
-                    <form action="" class="d-flex justify-content-center">
+                    <form action="#" class="d-flex justify-content-center">
                         <input type="email" placeholder="Enter your email">
                         <button type="submit">
                         Submit
