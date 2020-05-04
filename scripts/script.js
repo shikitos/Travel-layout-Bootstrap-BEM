@@ -20,25 +20,6 @@ window.onclick = function(event) {
 }
 
 
-//Open modal at the button from DISCOUNT section
-var modal2 = document.getElementById("myModal2")
-var btn2 = document.getElementById("openModal2")
-var span2 = document.getElementsByClassName("close-2")[0];
-
-btn2.onclick = function() {
-        modal2.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-span2.onclick = function() {
-        modal2.style.display = "none";
-    }
-    // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
-
 
 //Search section. Tabs
 function openType(evt, typeName) {
@@ -116,3 +97,23 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 365 * 24 * 60 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
+
+
+//Open modal at the button from DISCOUNT section
+var modal2 = document.getElementById("myModal2")
+var btn2 = document.getElementById("openModal2")
+var span2 = document.getElementsByClassName("close-2")[0];
+
+btn2.onclick = function() {
+        modal2.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}

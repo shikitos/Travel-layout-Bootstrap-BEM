@@ -865,7 +865,7 @@ header {
 }
 
 
-/*Modal*/
+/*========================myModal2============================*/
 
 .modal2 {
     display: none;
@@ -902,7 +902,7 @@ header {
     color: #333;
     position: absolute;
     top: 0%;
-    right: -30%;
+    right: -21%;
     margin-top: -60px;
 }
 
@@ -914,8 +914,9 @@ header {
 /*Carousel*/
 
 .getticket-carousel-item__left img {
-    width: 370px;
-    height: 307px;
+    width: 350px;
+    height: 300px;
+    margin-left: -45px;
 }
 
 .getticket>.carousel>.carousel-inner>.carousel-item.active {
@@ -966,7 +967,7 @@ header {
     width: 180px;
     background: rgba(97, 97, 97, 0.05);
     position: absolute;
-    right: -80%;
+    right: -60%;
     bottom: 30%;
     padding: 15px 24px;
     background-color: #ffdd00;
@@ -989,7 +990,8 @@ header {
 }
 
 .getticket>.carousel>.carousel-control-prev {
-    left: -20%;
+    left: 0%;
+    width: 5%;
 }
 
 .getticket>.carousel>.carousel-control-next>.carousel-control-next-icon {
@@ -997,11 +999,12 @@ header {
 }
 
 .getticket>.carousel>.carousel-control-next {
-    right: -20%;
+    right: 0%;
+    width: 5%;
 }
 
 
-/*========================GETTICKET============================*/
+/*========================BIGDEAL==============================*/
 
 .bigdeal {
     margin-bottom: 150px;
@@ -1049,13 +1052,127 @@ header {
 }
 
 
-/*========================BIGDEAL==============================*/
-
-
 /*========================BLOG=================================*/
+
+.blog-card {
+    box-shadow: 0 0 10px 6px #fcfcfc;
+    margin-bottom: 110px;
+}
+
+.blog-card__data {
+    margin: 15px 0 28px 16px;
+    width: 90%;
+    font-weight: 600;
+    color: #b9bbba;
+    font-size: 12px;
+    text-transform: uppercase;
+    max-height: 12px;
+}
+
+.blog-card__text h5 {
+    font-size: 20px;
+    color: #333333;
+    line-height: 36px;
+    margin: 0 0 25px 16px;
+}
+
+.blog-card__text p {
+    margin: 0 0 30px 16px;
+    width: 90%;
+    line-height: 28px;
+    font-size: 15px;
+    color: #616161;
+}
+
+.blog-card__text a {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.blog-card__text img {
+    transition: 0.5s;
+    margin-bottom: 35px;
+}
+
+.blog-card__text img:hover {
+    transform: scale(1.2);
+}
 
 
 /*========================CONTACTS==============================*/
+
+.contacts {
+    background: #1b2739 url(../img/contacts-bg.jpg) no-repeat center top / cover;
+}
+
+.contact-logo {
+    margin: 120px 0 45px 0;
+}
+
+.contacts-info__connection p,
+a {
+    color: #bababa;
+}
+
+.contacts-info__connection>ul {
+    margin-top: 60px;
+}
+
+.contacts-info__connection>ul>li {
+    margin-right: 30px;
+    text-align: left;
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+.contacts-info__connection>ul>li>a>img:hover {
+    transform: scale(1.4);
+}
+
+.connect-support h5,
+.connect-location h5,
+.connect-menu h5 {
+    margin: 120px 0 15px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.connect-support hr,
+.connect-location hr,
+.connect-menu hr {
+    color: #ffc001;
+    max-width: 26px;
+    margin: 0;
+    border: 1px solid #ffc001;
+    margin-bottom: 45px;
+}
+
+.connect-support a,
+.connect-support li,
+.connect-location a,
+.connect-location li,
+.connect-menu a,
+.connect-menu li {
+    color: #bababa;
+    font-size: 14px;
+    margin-bottom: 25px;
+    list-style: none;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.connect-support a:hover,
+.connect-location a:hover,
+.connect-menu a:hover {
+    color: #ffc001;
+    text-decoration: none;
+}
+
+.prefooter-line hr {
+    color: #273243;
+}
 
 
 /*========================MEDIA=================================*/
