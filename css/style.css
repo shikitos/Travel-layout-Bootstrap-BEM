@@ -890,20 +890,29 @@ header {
 
 .modal2>.container>.row {
     background-color: #fafafafa;
-    width: 60vw;
+    width: 70%;
     position: absolute;
     top: -50%;
     left: 15%;
 }
 
-.close-2 {
+.modal-carousel__header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 20px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.modal-carousel__header>.close-2 {
     cursor: pointer;
     font-size: 36px;
     color: #333;
     position: absolute;
-    top: 0%;
-    right: -21%;
-    margin-top: -60px;
+    right: 5px;
+    top: 0;
+    display: block;
 }
 
 .close-2:hover {
@@ -914,15 +923,17 @@ header {
 /*Carousel*/
 
 .getticket-carousel-item__left img {
-    width: 350px;
-    height: 300px;
-    margin-left: -45px;
+    /*width: 350px;
+    height: 300px;*/
+    /*margin-left: -45px;*/
 }
 
 .getticket>.carousel>.carousel-inner>.carousel-item.active {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    margin: 0;
 }
 
 
@@ -1051,6 +1062,10 @@ header {
     text-transform: uppercase;
 }
 
+.bigdeal__title button:hover {
+    background: #121c2b;
+}
+
 
 /*========================BLOG=================================*/
 
@@ -1114,6 +1129,10 @@ a {
     color: #bababa;
 }
 
+.contacts-info__connection a:hover {
+    color: #616161;
+}
+
 .contacts-info__connection>ul {
     margin-top: 60px;
 }
@@ -1173,6 +1192,37 @@ a {
 .prefooter-line hr {
     color: #273243;
 }
+
+.footer__rights p {
+    font-size: 14px;
+    color: #fff;
+    margin: 50px 0 25px 0;
+}
+
+.footer__about li,
+.footer__about a {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    margin: 23px 0 25px 20px;
+}
+
+
+/*
+.goup-anchor {
+    position: fixed;
+    color: #616161;
+    font-size: 24px;
+    bottom: 50%;
+    right: 3%;
+    display: none;
+}
+
+.goup-anchor:hover {
+    text-decoration: none;
+    color: #aaaaaa;
+}
+*/
 
 
 /*========================MEDIA=================================*/
