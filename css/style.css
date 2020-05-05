@@ -908,10 +908,10 @@ header {
 .modal-carousel__header>.close-2 {
     cursor: pointer;
     font-size: 36px;
-    color: #333;
+    color: #fff;
     position: absolute;
-    right: 5px;
-    top: 0;
+    right: -10%;
+    top: 0%;
     display: block;
 }
 
