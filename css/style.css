@@ -182,6 +182,10 @@ header {
     text-decoration: none;
 }
 
+#menu_icon {
+    display: none;
+}
+
 
 /*Text*/
 
@@ -922,12 +926,6 @@ header {
 
 /*Carousel*/
 
-.getticket-carousel-item__left img {
-    /*width: 350px;
-    height: 300px;*/
-    /*margin-left: -45px;*/
-}
-
 .getticket>.carousel>.carousel-inner>.carousel-item.active {
     display: flex;
     align-items: center;
@@ -1208,21 +1206,283 @@ a {
 }
 
 
-/*
-.goup-anchor {
-    position: fixed;
-    color: #616161;
-    font-size: 24px;
-    bottom: 50%;
-    right: 3%;
-    display: none;
-}
-
-.goup-anchor:hover {
-    text-decoration: none;
-    color: #aaaaaa;
-}
-*/
-
-
 /*========================MEDIA=================================*/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /*Header*/
+    .header-info__address {
+        min-width: 45%;
+        margin-left: 10%;
+    }
+    .header-info__login {
+        flex: 0 0 20%;
+        max-width: 20%;
+        text-align: right;
+    }
+    .header-info__navbar>.col-lg-6 {
+        flex: 0 0 60%;
+        max-width: 60%;
+        align-self: center !important;
+    }
+    /*Popular carousel*/
+    .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-next>.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -10%;
+    }
+    .popular-carousel>.carousel>.carousel-control-next {
+        right: -10%;
+    }
+    .item1-1,
+    .item2-1,
+    .item3-1,
+    .item1-2,
+    .item2-2,
+    .item3-2,
+    .item1-3,
+    .item2-3,
+    .item3-3 {
+        width: 30% !important;
+    }
+    /*Honeymoon carousel*/
+    .honeymoon-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -5%;
+        top: -20%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-next {
+        width: 5%;
+        right: -5%;
+        top: -20%;
+    }
+    /*Modal 2 - Getticket*/
+    .getticket>.carousel>.carousel-control-prev {
+        left: -10%;
+        width: 5%;
+    }
+    .getticket>.carousel>.carousel-control-next {
+        right: -10%;
+        width: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /*Header*/
+    .header-info__links li,
+    .header-info__links a {
+        width: 11px;
+        height: 9px;
+    }
+    .header-info__address {
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .header-info__address img {
+        margin-left: 0;
+    }
+    .header-info__login {
+        font-size: 16px;
+        padding: 0;
+    }
+    .header-info__navbar {
+        height: 100%;
+        align-items: center;
+    }
+    /*Popular carousel*/
+    .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-next>.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -10%;
+    }
+    .popular-carousel>.carousel>.carousel-control-next {
+        right: -10%;
+    }
+    .item1-1,
+    .item2-1,
+    .item3-1,
+    .item1-2,
+    .item2-2,
+    .item3-2,
+    .item1-3,
+    .item2-3,
+    .item3-3 {
+        width: 30% !important;
+    }
+    /*Destination carousel*/
+    .carousel-caption {
+        bottom: 15%;
+    }
+    /*Honeymoon carousel*/
+    .honeymoon-carousel>.carousel>.carousel-inner>.carousel-item.active {
+        display: flex;
+    }
+    .honeymoon-carousel-item__right {
+        margin-left: 5%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -8%;
+        top: -20%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-next {
+        width: 5%;
+        right: -8%;
+        top: -20%;
+    }
+    /*Readmore*/
+    .readmore__text button {
+        margin-bottom: 0;
+    }
+    #carousel-4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .readmore-img__carousel>.carousel>.carousel-inner>.carousel-item img {
+        max-height: 420px;
+    }
+    /*Modal 2 - Getticket*/
+    .modal2>.container>.row {
+        width: 95%;
+        left: 5%;
+    }
+    .getticket>.carousel>.carousel-control-prev {
+        left: -10%;
+        width: 5%;
+    }
+    .getticket>.carousel>.carousel-control-next {
+        right: -10%;
+        width: 5%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    /*Header*/
+    .header-info__links li,
+    .header-info__links a {
+        width: 11px;
+        height: 9px;
+    }
+    .header-info__address {
+        padding-right: 0;
+        font-size: 16px;
+        margin: 2px 0 10px 0;
+    }
+    .header-info__address img {
+        margin-left: 0;
+    }
+    .header-info__login {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    /*Media navbutton*/
+    #menu_icon {
+        position: fixed;
+        color: #ffdd00;
+        right: 5%;
+        top: 2.5%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 99;
+        display: block;
+    }
+    #side_nav {
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #050505;
+        z-index: 2;
+        transition: 0.5s;
+        height: 100vh;
+    }
+    #side_nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #side_nav li {
+        max-width: 75px;
+        margin: 10px 0 20px 35px;
+    }
+    /*Popular carousel*/
+    .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-next>.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -10%;
+    }
+    .popular-carousel>.carousel>.carousel-control-next {
+        right: -10%;
+    }
+    .item1-1,
+    .item2-1,
+    .item3-1,
+    .item1-2,
+    .item2-2,
+    .item3-2,
+    .item1-3,
+    .item2-3,
+    .item3-3 {
+        width: 30% !important;
+    }
+    /*Destination carousel*/
+    .carousel-caption {
+        bottom: 15%;
+    }
+    /*Honeymoon carousel*/
+    .honeymoon-carousel>.carousel>.carousel-inner>.carousel-item.active {
+        display: flex;
+    }
+    .honeymoon-carousel-item__right {
+        margin-left: 5%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: -8%;
+        top: -20%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-next {
+        width: 5%;
+        right: -8%;
+        top: -20%;
+    }
+    /*Readmore*/
+    .readmore__text button {
+        margin-bottom: 0;
+    }
+    #carousel-4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .readmore-img__carousel>.carousel>.carousel-inner>.carousel-item img {
+        max-height: 420px;
+    }
+    /*Modal 2 - Getticket*/
+    .modal2>.container>.row {
+        width: 95%;
+        left: 5%;
+    }
+    .getticket>.carousel>.carousel-control-prev {
+        left: -10%;
+        width: 5%;
+    }
+    .getticket>.carousel>.carousel-control-next {
+        right: -10%;
+        width: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {}

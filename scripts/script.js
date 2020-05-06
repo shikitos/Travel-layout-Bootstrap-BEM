@@ -1,9 +1,9 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 // Get the button that opens the modal
-var btn = document.getElementById("openModal");
+let btn = document.getElementById("openModal");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
         modal.style.display = "block";
@@ -23,8 +23,8 @@ window.onclick = function(event) {
 
 //Search section. Tabs
 function openType(evt, typeName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+    // Declare all letiables
+    let i, tabcontent, tablinks;
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -57,11 +57,11 @@ function sendButton() {
 //Сountdown
 
 function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    let t = Date.parse(endtime) - Date.parse(new Date());
+    let seconds = Math.floor((t / 1000) % 60);
+    let minutes = Math.floor((t / 1000 / 60) % 60);
+    let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
     return {
         'total': t,
         'days': days,
@@ -72,14 +72,14 @@ function getTimeRemaining(endtime) {
 }
 
 function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
+    let clock = document.getElementById(id);
+    let daysSpan = clock.querySelector('.days');
+    let hoursSpan = clock.querySelector('.hours');
+    let minutesSpan = clock.querySelector('.minutes');
+    let secondsSpan = clock.querySelector('.seconds');
 
     function updateClock() {
-        var t = getTimeRemaining(endtime);
+        let t = getTimeRemaining(endtime);
 
         daysSpan.innerHTML = t.days;
         hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -92,17 +92,17 @@ function initializeClock(id, endtime) {
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
+    let timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 365 * 24 * 60 * 60 * 1000); // for endless timer
+let deadline = new Date(Date.parse(new Date()) + 365 * 24 * 60 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
 
 
 //Open modal at the button from DISCOUNT section
-var modal2 = document.getElementById("myModal2")
-var btn2 = document.getElementById("openModal2")
-var span2 = document.getElementsByClassName("close-2")[0];
+let modal2 = document.getElementById("myModal2")
+let btn2 = document.getElementById("openModal2")
+let span2 = document.getElementsByClassName("close-2")[0];
 
 btn2.onclick = function() {
         modal2.style.display = "block";
@@ -134,3 +134,33 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+
+//Icon for navbar when size of the screen less than
+function navBar() {
+    // Do it if the screen size is less than 768
+    let w = window.innerWidth;
+    if (w < 768) {
+        let menu_icon = document.getElementById("menu_icon");
+        let side_nav = document.getElementById("side_nav");
+
+        side_nav.style.right = "-200px";
+        // side_nav.style.display = "none";
+        menu_icon.onclick = function() {
+            if (side_nav.style.right == "-200px") {
+                side_nav.style.right = "0";
+                //side_nav.style.display = "flex";
+            } else {
+                side_nav.style.right = "-200px";
+                //side_nav.style.display = "none";
+            }
+        };
+    }
+}
+
+// Do again with refresh the screen size
+window.addEventListener('resize', function() {
+    console.log("Resized");
+    navBar();
+});

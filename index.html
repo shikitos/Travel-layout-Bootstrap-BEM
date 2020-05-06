@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/site-icon.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Dreams Travel</title>
@@ -16,16 +17,16 @@
     <header id="header" class="header">
         <div class="container">
             <div class="row header-info">
-                <div class="col-lg-3 text-left header-info__links animated slideInDown slower">
+                <div class="col-lg-3 col-md-3 col-sm-12 text-left header-info__links animated slideInDown slower">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/shikitos" target="blank"><img src="img/header-icon1.png" alt="Link icon facebook"></a>
+                            <a href="pages/links.html" target="blank"><img src="img/header-icon1.png" alt="Link icon facebook"></a>
                         </li>
                         <li>
                             <a href="pages/links.html" target="blank"><img src="img/header-icon2.png" alt="Link icon pinterest"></a>
                         </li>
                         <li>
-                            <a href="http://instagram.com/shikitos" target="blank"><img src="img/header-icon3.png" alt="Link icon instagram"></a>
+                            <a href="pages/links.html" target="blank"><img src="img/header-icon3.png" alt="Link icon instagram"></a>
                         </li>
                         <li>
                             <a href="pages/links.html" target="blank"><img src="img/header-icon4.png" alt="Link icon twitter"></a>
@@ -35,23 +36,24 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 offset-lg-3 d-flex text-right h-100 align-self-center header-info__address animated slideInDown slower">
+                <div class="col-lg-4 offset-lg-3 col-md-6 col-sm-12 d-flex text-right h-100 align-self-center header-info__address animated slideInDown slower">
                     <img src="img/header-location.png" alt="Location">
                     <a href="https://goo.gl/maps/D2JrmvDBy5VtKmax6" target="blank">
                         <p> 1835 73rd Ave NE, Medina, Washington, USA.</p>
                     </a>
                 </div>
-                <div class="col-lg-2 text-right header-info__login h-100 align-self-center animated slideInDown slower">
+                <div class="col-lg-2 col-md-3 col-sm-12 text-sm-left text-right header-info__login h-100 align-self-center animated slideInDown slower">
                     <a href="#">Login</a>
                     <span class="yellow">|</span>
                     <a href="#">Register</a>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between header-info__navbar animated slideInDown slower">
-                <div class="col-lg-2 text-left">
+            <div class="row d-flex justify-content-between header-info__navbar">
+                <div class="col-lg-2 col-md-3 col-sm-12 text-left">
                     <img src="img/header-logo.png" alt="Logotype 'Dreams'">
+
                 </div>
-                <div class="col-lg-6 text-right h-20 align-self-auto animated slideInDown slower">
+                <div class="col-lg-6 col-md-9 text-right text-sm-left h-20 align-self-auto" id="side_nav">
                     <ul>
                         <li>
                             <a href="#popular">Home</a>
@@ -70,8 +72,7 @@
                         </li>
                     </ul>
                 </div>
-
-
+                <i class="fa fa-align-justify header__menu" id="menu_icon"></i>
             </div>
             <div class="row header-text">
                 <div class="col-lg-12 text-left header-text__title animated slideInLeft slower">
@@ -189,7 +190,7 @@
                 </div>
             </div>
             <div class="row popular-carousel ">
-                <div class="col-lg-12 text-center ">
+                <div class="col-lg-12 text-center popular-carousel ">
                     <!--Start of the carousel-->
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -410,12 +411,12 @@
     <section id="readmore" class="readmore">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-left readmore__text">
+                <div class="col-lg-6 col-md-12 text-left readmore__text">
                     <h2>50% <span> OFF Discount 10-30% Off </span> <br> Best Holiday Packages</h2>
                     <p>Find your ideal holiday package whether you're travelling in <br> Australia or around the World. Book Flights & Accommoda- <br> tion packages in one place with Escape Travel.</p>
                     <button>Read more</button>
                 </div>
-                <div class="col-lg-6  readmore-img__carousel">
+                <div class="col-lg-6 col-md-12 readmore-img__carousel">
                     <!--Carousel-->
                     <div id="carousel-4" class="carousel slide" data-ride="carousel">
                         <!--Content-->
@@ -623,7 +624,7 @@
     <footer id="contacts" class="contacts">
         <div class="container">
             <div class="row contacts-info">
-                <div class="col-lg-4 text-left contacts-info__connection">
+                <div class="col-lg-4 col-md-6 text-left contacts-info__connection">
                     <img src="img/contacts-logo.png" alt="Logotype" class="contact-logo">
                     <p>Phone:
                         <a href="tel:+91254541254">
@@ -669,80 +670,80 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 offset-lg-1 text-left connect-support">
+                <div class="col-lg-2 offset-lg-1 col-md-6 text-left connect-support">
                     <h5>Support</h5>
                     <hr>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Email Contact
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Help Center
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Live Chat
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Our community
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Services Status
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-1 offset-lg-1 text-center connect-location">
+                <div class="col-lg-1 offset-lg-1 col-md-6 text-left connect-location">
                     <h5>Location</h5>
                     <hr>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 London
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Canada
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 America
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 India
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 Australia
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-1 offset-lg-2 textcenter connect-menu">
+                <div class="col-lg-1 offset-lg-2 col-md-6 textcenter connect-menu">
                     <h5>Menu</h5>
                     <hr>
                     <ul>
                         <li>
-                            <a href="#popular">Home</a>
+                            <a href="#header">Home</a>
                         </li>
                         <li>
                             <a href="#destinations">About</a>
                         </li>
                         <li>
-                            <a href="">Tours</a>
+                            <a href="#popular">Tours</a>
                         </li>
                         <li>
                             <a href="#honeymoon">Packages</a>
@@ -754,11 +755,11 @@
                 </div>
             </div>
             <hr class="prefooter-line">
-            <div class="row d-flex justify-content-between footer">
-                <div class="col-lg-4 text-left footer__rights">
+            <div class="row d-flex justify-content-between footer flex-column-reverse">
+                <div class="col-lg-4 col-md-12 text-left text-md-center footer__rights">
                     <p>&copy;2020 Roy Design. All Rights Reserved </p>
                 </div>
-                <div class="col-lg-8 text-right footer__about">
+                <div class="col-lg-8 col-md-12 text-right text-md-left footer__about">
                     <ul>
                         <li>
                             <a href="#">
@@ -799,7 +800,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--<script src="scripts/bootstrap.min.js"></script>-->
     <!--Autoslide for all carousels-->
     <script type="text/javascript">
         $(document).ready(function() {
