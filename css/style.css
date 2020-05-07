@@ -559,18 +559,18 @@ header {
 
 /*Title*/
 
-.destinations-title {
+.destinations__title {
     background: url(../img/destination_bgtext.png) no-repeat center top / contain;
 }
 
-.destinations-title h2 {
+.destinations__title h2 {
     margin: 40px 0 45px 0;
     font-weight: 700;
     font-size: 30px;
     color: #333;
 }
 
-.destinations-title p {
+.destinations__title p {
     margin-bottom: 70px;
     color: #333;
     font-size: 16px;
@@ -631,14 +631,14 @@ header {
 
 /*Title*/
 
-.honeymoon-title h2 {
+.honeymoon__title h2 {
     margin: 100px 0 45px 0;
     font-weight: 600;
     font-size: 30px;
     color: #333;
 }
 
-.honeymoon-title p {
+.honeymoon__title p {
     margin-bottom: 100px;
     font-size: 16px;
     color: #333;
@@ -1367,6 +1367,9 @@ a {
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
     /*Header*/
+    .header br {
+        display: none;
+    }
     .header-info__links li,
     .header-info__links a {
         width: 11px;
@@ -1414,6 +1417,19 @@ a {
         margin: 10px 0 20px 35px;
     }
     /*Popular carousel*/
+    .popular-carousel {
+        margin-bottom: 50px;
+    }
+    .popular-carousel>.carousel {
+        width: 125%;
+        left: -15%;
+    }
+    .popular-carousel>.carousel h5 {
+        font-size: 16px;
+    }
+    .popular-carousel>.carousel p {
+        font-size: 14px;
+    }
     .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
     }
@@ -1422,10 +1438,11 @@ a {
     }
     .popular-carousel>.carousel>.carousel-control-prev {
         width: 5%;
-        left: -10%;
+        left: 5%;
     }
     .popular-carousel>.carousel>.carousel-control-next {
-        right: -10%;
+        right: 5%;
+        width: 5%;
     }
     .item1-1,
     .item2-1,
@@ -1438,26 +1455,88 @@ a {
     .item3-3 {
         width: 30% !important;
     }
+    /*Destination title*/
+    .destinations__title h2 {
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    .destinations__title p {
+        font-size: 14px;
+    }
+    .destinations__title br {
+        display: none;
+    }
     /*Destination carousel*/
-    .carousel-caption {
-        bottom: 15%;
+    .destinations-carousel>.carousel>.carousel-inner>.carousel-item {
+        height: auto;
+    }
+    /*Honeymoon title*/
+    .honeymoon__title h2 {
+        font-size: 26px;
+        margin-top: 25px;
+    }
+    .honeymoon__title p {
+        font-size: 14px;
+    }
+    .honeymoon__title br {
+        display: none;
     }
     /*Honeymoon carousel*/
+    .honeymoon-carousel {
+        margin-bottom: 50px;
+    }
+    #carousel-3>.carousel-inner>.carousel-item {
+        height: auto;
+    }
+    .honeymoon-carousel-item__left {
+        max-width: 35%;
+    }
+    .honeymoon-carousel-item__left img {
+        width: 280px;
+        height: 217px;
+    }
     .honeymoon-carousel>.carousel>.carousel-inner>.carousel-item.active {
         display: flex;
     }
     .honeymoon-carousel-item__right {
-        margin-left: 5%;
+        margin-left: 18%;
+        max-width: 65%;
+    }
+    .honeymoon-carousel-item__right h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+        margin-top: 0;
+    }
+    .honeymoon-carousel-item__right span {
+        font-size: 22px;
+    }
+    .honeymoon-carousel-item__right p:nth-child(odd) {
+        margin: 10px 0 5px 25px;
+        font-size: 12px;
+    }
+    .honeymoon-carousel-item__right p:nth-child(even) {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    .honeymoon-carousel-item__right br {
+        display: none;
+    }
+    .honeymoon-carousel-item__right button {
+        position: static;
+    }
+    .maldives p:nth-child(even) {
+        margin-bottom: 24px;
     }
     .honeymoon-carousel>.carousel>.carousel-control-prev {
         width: 5%;
         left: -8%;
-        top: -20%;
+        top: -40%;
     }
     .honeymoon-carousel>.carousel>.carousel-control-next {
         width: 5%;
         right: -8%;
-        top: -20%;
+        top: -40%;
     }
     /*Readmore*/
     .readmore__text button {
@@ -1470,10 +1549,35 @@ a {
     .readmore-img__carousel>.carousel>.carousel-inner>.carousel-item img {
         max-height: 420px;
     }
+    /*Discount*/
+    .discount br {
+        display: none;
+    }
+    .countdown-number:nth-last-child(-n+3) {
+        margin-left: 50px;
+    }
     /*Modal 2 - Getticket*/
     .modal2>.container>.row {
-        width: 95%;
+        width: 100%;
         left: 5%;
+    }
+    .getticket-carousel-item__left img {
+        width: 440px;
+        height: 380px;
+    }
+    .getticket>.carousel>.carousel-inner {
+        height: 600px;
+        margin-right: 35px;
+    }
+    .getticket-carousel-item__right br {
+        display: none;
+    }
+    .getticket-carousel-item__right button {
+        right: 0;
+        bottom: 33%;
+    }
+    .getticket>.carousel>.carousel-inner>.carousel-item.active {
+        display: block;
     }
     .getticket>.carousel>.carousel-control-prev {
         left: -10%;
@@ -1483,6 +1587,309 @@ a {
         right: -10%;
         width: 5%;
     }
+    /*Contacts*/
+    .connect-support,
+    .connect-location,
+    .connect-menu {
+        text-align-last: center;
+    }
+    .connect-support hr,
+    .connect-location hr,
+    .connect-menu hr {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    /*Footer*/
+    .footer__about li {
+        margin-left: 10px;
+        text-align: left;
+    }
+    .footer__about a {
+        margin: 0;
+        margin-right: 20px;
+    }
+    .footer__rights p {
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    /*Header*/
+    .header br {
+        display: none;
+    }
+    .header-info__links li,
+    .header-info__links a {
+        width: 11px;
+        height: 9px;
+    }
+    .header-info__address {
+        padding-right: 0;
+        font-size: 16px;
+        margin: 2px 0 10px 0;
+    }
+    .header-info__address img {
+        margin-left: 0;
+    }
+    .header-info__login {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    /*Media navbutton*/
+    #menu_icon {
+        position: fixed;
+        color: #ffdd00;
+        right: 10%;
+        top: 2.5%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 99;
+        display: block;
+    }
+    #side_nav {
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #050505;
+        z-index: 2;
+        transition: 0.5s;
+        height: 100vh;
+    }
+    #side_nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #side_nav li {
+        max-width: 75px;
+        margin: 10px 0 20px 35px;
+    }
+    /*Popular carousel*/
+    .popular-carousel {
+        margin-bottom: 50px;
+    }
+    .popular-carousel>.carousel {
+        width: 100%;
+        left: 0%;
+    }
+    .popular-carousel>.carousel h5 {
+        font-size: 16px;
+    }
+    .popular-carousel>.carousel p {
+        font-size: 14px;
+    }
+    .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-next>.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    .popular-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: 12.5%;
+    }
+    .popular-carousel>.carousel>.carousel-control-next {
+        right: 8%;
+        width: 5%;
+    }
+    .popular-carousel>.carousel>.carousel-indicators {
+        left: 12%;
+    }
+    .popular-carousel>.carousel>.carousel-inner {
+        height: 1100px;
+    }
+    .item1-1,
+    .item2-1,
+    .item3-1,
+    .item1-2,
+    .item2-2,
+    .item3-2,
+    .item1-3,
+    .item2-3,
+    .item3-3 {
+        width: 100%;
+        max-width: 65%;
+        display: block !important;
+        margin-left: 20%;
+    }
+    /*Destination title*/
+    .destinations__title h2 {
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    .destinations__title p {
+        font-size: 14px;
+    }
+    .destinations__title br {
+        display: none;
+    }
+    /*Destination carousel*/
+    .destinations-carousel>.carousel>.carousel-inner>.carousel-item {
+        height: auto;
+    }
+    /*Honeymoon title*/
+    .honeymoon__title h2 {
+        font-size: 26px;
+        margin-top: 25px;
+    }
+    .honeymoon__title p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .honeymoon__title br {
+        display: none;
+    }
+    /*Honeymoon carousel*/
+    .honeymoon-carousel {
+        margin-bottom: 50px;
+    }
+    #carousel-3>.carousel-inner>.carousel-item {
+        height: auto;
+    }
+    .honeymoon-carousel-item__left {
+        max-width: 75%;
+        height: auto;
+    }
+    .honeymoon-carousel-item__left img {
+        width: 280px;
+        height: 217px;
+    }
+    .honeymoon-carousel>.carousel>.carousel-inner>.carousel-item.active {
+        display: block;
+    }
+    .honeymoon-carousel-item__right {
+        /*margin-left: 18%;*/
+        max-width: 80%;
+    }
+    .honeymoon-carousel-item__right h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .honeymoon-carousel-item__right span {
+        font-size: 22px;
+    }
+    .honeymoon-carousel-item__right p:nth-child(odd) {
+        margin: 10px 0 5px 25px;
+        font-size: 12px;
+    }
+    .honeymoon-carousel-item__right p:nth-child(even) {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    .honeymoon-carousel-item__right br {
+        display: none;
+    }
+    .honeymoon-carousel-item__right button {
+        position: static;
+        width: 100%;
+    }
+    .maldives p:nth-child(even) {
+        margin-bottom: 24px;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-prev {
+        width: 5%;
+        left: 6%;
+        top: -20%;
+    }
+    .honeymoon-carousel>.carousel>.carousel-control-next {
+        width: 5%;
+        right: 6%;
+        top: -20%;
+    }
+    /*Readmore*/
+    .readmore__text br {
+        display: none;
+    }
+    .readmore__text button {
+        margin-bottom: 0;
+    }
+    #carousel-4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .readmore-img__carousel>.carousel>.carousel-inner>.carousel-item img {
+        max-height: 420px;
+    }
+    #carousel-4>.carousel-control-next,
+    #carousel-4>.carousel-control-prev {
+        bottom: 25%;
+    }
+    /*Discount*/
+    .discount br {
+        display: none;
+    }
+    .countdown-number:nth-last-child(-n+3) {
+        margin-left: 35px;
+    }
+    /*Modal 2 - Getticket*/
+    .modal-carousel__header>.close-2 {
+        right: 5%;
+        top: -50%;
+        z-index: 2;
+        color: #000;
+    }
+    .modal2>.container>.row {
+        width: 90%;
+    }
+    .getticket-carousel-item__left img {
+        width: 300px;
+        height: 240px;
+    }
+    .getticket>.carousel>.carousel-inner {
+        height: 550px;
+        margin-right: 35px;
+    }
+    .getticket-carousel-item__left {
+        max-width: 80%;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .getticket-carousel-item__right {
+        max-width: 80%;
+    }
+    .getticket-carousel-item__right br {
+        display: none;
+    }
+    .getticket-carousel-item__right button {
+        right: -47.5%;
+        bottom: 33%;
+    }
+    .getticket>.carousel>.carousel-inner>.carousel-item.active {
+        display: block;
+    }
+    .getticket>.carousel>.carousel-control-prev {
+        left: 0%;
+        width: 5%;
+    }
+    .getticket>.carousel>.carousel-control-next {
+        right: 0%;
+        width: 5%;
+    }
+    /*Contacts*/
+    .connect-support,
+    .connect-location,
+    .connect-menu {
+        text-align-last: center;
+    }
+    .connect-support hr,
+    .connect-location hr,
+    .connect-menu hr {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    /*Footer*/
+    .footer__about li {
+        margin-left: 10px;
+        text-align: left;
+        display: flex;
+    }
+    .footer__about a {
+        margin: 0;
+        margin-right: 20px;
+    }
+    .footer__rights p {
+        text-align: center;
+    }
+}
