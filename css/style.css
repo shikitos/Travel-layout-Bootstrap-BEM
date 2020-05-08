@@ -1293,6 +1293,15 @@ a {
         height: 100%;
         align-items: center;
     }
+    /*Modal*/
+    .modal-forms form {
+        margin-left: 15px;
+    }
+    .modal-forms>form>div input {
+        width: 18vw;
+        margin-right: 15px;
+        padding-left: 5px;
+    }
     /*Popular carousel*/
     .popular-carousel>.carousel>.carousel-control-prev>.carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffdd00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -1415,6 +1424,25 @@ a {
     #side_nav li {
         max-width: 75px;
         margin: 10px 0 20px 35px;
+    }
+    /*Modal*/
+    .modal-forms form {
+        margin-left: 15px;
+    }
+    .modal-forms>form>div input {
+        width: 18vw;
+        margin-right: 25px;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+    .tabcontent h4 {
+        margin-top: 10px;
+    }
+    .modal-forms__one {
+        display: block;
+    }
+    .modal-forms__two {
+        display: block;
     }
     /*Popular carousel*/
     .popular-carousel {
@@ -1664,6 +1692,31 @@ a {
         max-width: 75px;
         margin: 10px 0 20px 35px;
     }
+    /*Modal*/
+    .tab button {
+        margin-right: 0;
+    }
+    .tabcontent {
+        height: 400px;
+    }
+    .modal-forms form {
+        margin-left: 15px;
+        display: block;
+    }
+    .modal-forms>form>div input {
+        width: 60vw;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+    .tabcontent h4 {
+        margin-top: 10px;
+    }
+    .modal-forms__one {
+        display: block;
+    }
+    .modal-forms__two {
+        display: block;
+    }
     /*Popular carousel*/
     .popular-carousel {
         margin-bottom: 50px;
@@ -1832,6 +1885,7 @@ a {
     }
     .modal2>.container>.row {
         width: 90%;
+        left: 8.5%;
     }
     .getticket-carousel-item__left img {
         width: 300px;
@@ -1867,6 +1921,10 @@ a {
         right: 0%;
         width: 5%;
     }
+    /*Big deal*/
+    .bigdeal__title input {
+        width: 65%;
+    }
     /*Contacts*/
     .connect-support,
     .connect-location,
@@ -1891,5 +1949,16 @@ a {
     }
     .footer__rights p {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    /*Modal tab*/
+    .tab {
+        margin-bottom: -8.5%;
+    }
+    .tab span {
+        color: #000;
+        margin-right: 5%;
     }
 }
