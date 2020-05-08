@@ -311,6 +311,14 @@ header {
 
 /*Forms*/
 
+.modal-forms__one {
+    display: flex;
+}
+
+.modal-forms__two {
+    display: flex;
+}
+
 .tabcontent {
     display: none;
     flex-direction: row;
@@ -349,7 +357,7 @@ header {
 }
 
 .tabcontent input {
-    width: 13.9vw;
+    width: 15vw;
     height: 6.5vh;
     margin-right: 60px;
     border: none;
@@ -391,10 +399,6 @@ header {
 
 .carousel-item {
     height: 370px;
-}
-
-.carousel-indicators {
-    margin-top: 5000px;
 }
 
 .carousel-indicators li {
@@ -1237,6 +1241,7 @@ a {
     }
     .popular-carousel>.carousel>.carousel-control-next {
         right: -10%;
+        .popular-carousel>.carousel>.carousel-control-next
     }
     .item1-1,
     .item2-1,
@@ -1311,10 +1316,11 @@ a {
     }
     .popular-carousel>.carousel>.carousel-control-prev {
         width: 5%;
-        left: -10%;
+        left: -5%;
     }
     .popular-carousel>.carousel>.carousel-control-next {
-        right: -10%;
+        right: -5%;
+        width: 5%;
     }
     .item1-1,
     .item2-1,
@@ -1329,7 +1335,12 @@ a {
     }
     /*Destination carousel*/
     .carousel-caption {
-        bottom: 15%;
+        bottom: 35%;
+    }
+    #carouselExampleCaptions>.carousel-control-prev,
+    #carouselExampleCaptions>.carousel-control-next {
+        width: 5%;
+        top: -40%;
     }
     /*Honeymoon carousel*/
     .honeymoon-carousel>.carousel>.carousel-inner>.carousel-item.active {
@@ -1340,12 +1351,12 @@ a {
     }
     .honeymoon-carousel>.carousel>.carousel-control-prev {
         width: 5%;
-        left: -8%;
+        left: -5%;
         top: -20%;
     }
     .honeymoon-carousel>.carousel>.carousel-control-next {
         width: 5%;
-        right: -8%;
+        right: -2.5%;
         top: -20%;
     }
     /*Readmore*/
@@ -1360,6 +1371,12 @@ a {
         max-height: 420px;
     }
     /*Modal 2 - Getticket*/
+    .modal-carousel__header>.close-2 {
+        color: #000;
+        right: 2.5%;
+        top: -80%;
+        height: 20px;
+    }
     .modal2>.container>.row {
         width: 95%;
         left: 5%;
@@ -1371,6 +1388,14 @@ a {
     .getticket>.carousel>.carousel-control-next {
         right: -10%;
         width: 5%;
+    }
+    /*Footer*/
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer__rights {
+        justify-content: center;
+        display: flex;
     }
 }
 
@@ -1425,15 +1450,20 @@ a {
         max-width: 75px;
         margin: 10px 0 20px 35px;
     }
+    /*Header-Text*/
+    .header-text__title {
+        margin-top: 50px;
+    }
     /*Modal*/
     .modal-forms form {
         margin-left: 15px;
     }
     .modal-forms>form>div input {
-        width: 18vw;
+        width: 30vw;
         margin-right: 25px;
         padding-left: 5px;
         margin-bottom: 15px;
+        height: 10vh;
     }
     .tabcontent h4 {
         margin-top: 10px;
@@ -1449,8 +1479,8 @@ a {
         margin-bottom: 50px;
     }
     .popular-carousel>.carousel {
-        width: 125%;
-        left: -15%;
+        width: 100vw;
+        left: -22.5%;
     }
     .popular-carousel>.carousel h5 {
         font-size: 16px;
@@ -1585,6 +1615,24 @@ a {
         margin-left: 50px;
     }
     /*Modal 2 - Getticket*/
+    .getticket-carousel-item__left {
+        margin-left: 7.5%;
+    }
+    .getticket-carousel-item__right {
+        margin-left: 17.5%;
+    }
+    .getticket-carousel-item__right button {
+        right: -9%;
+    }
+    .modal-carousel__header {
+        position: relative;
+    }
+    .modal-carousel__header>.close-2 {
+        color: #000;
+        right: 0%;
+        top: -80%;
+        height: 20px;
+    }
     .modal2>.container>.row {
         width: 100%;
         left: 5%;
@@ -1601,18 +1649,18 @@ a {
         display: none;
     }
     .getticket-carousel-item__right button {
-        right: 0;
+        right: -15%;
         bottom: 33%;
     }
     .getticket>.carousel>.carousel-inner>.carousel-item.active {
         display: block;
     }
     .getticket>.carousel>.carousel-control-prev {
-        left: -10%;
+        left: 0%;
         width: 5%;
     }
     .getticket>.carousel>.carousel-control-next {
-        right: -10%;
+        right: 0%;
         width: 5%;
     }
     /*Contacts*/
@@ -1628,6 +1676,9 @@ a {
         margin-bottom: 20px;
     }
     /*Footer*/
+    .footer {
+        flex-direction: column-reverse;
+    }
     .footer__about li {
         margin-left: 10px;
         text-align: left;
@@ -1638,6 +1689,70 @@ a {
     }
     .footer__rights p {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /*Modal*/
+    .tab span {
+        margin-right: 10%;
+    }
+    .tabcontent {
+        width: 100vw;
+    }
+    .modal-forms form {
+        margin-left: 15px;
+    }
+    .modal-forms>form>div input {
+        width: 25vw;
+        margin-right: 25px;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+    .tabcontent h4 {
+        margin-top: 10px;
+    }
+    /*Popular - Carousel*/
+    .popular-carousel>.carousel {
+        left: -2.5%;
+    }
+    /*HONEYMOON CAROUSEL */
+    .honeymoon-carousel>.carousel>.carousel-control-next {
+        right: 0;
+    }
+    /*Modal 2*/
+    .getticket-carousel-item__left img {
+        width: 360px;
+        height: 300px;
+    }
+    .getticket-carousel-item__left {
+        margin-left: 20%;
+    }
+    .getticket-carousel-item__right {
+        margin-left: 20%;
+    }
+    .getticket-carousel-item__right button {
+        right: -9%;
+    }
+    .modal-carousel__header {
+        position: relative;
+    }
+    .getticket-carousel-item__left {
+        max-width: 85%;
+    }
+    .modal-carousel__header>.close-2 {
+        color: #000;
+        right: 10%;
+        top: -80%;
+        height: 20px;
+    }
+    .getticket>.carousel>.carousel-control-prev {
+        left: 2%;
+        width: 5%;
+    }
+    .getticket>.carousel>.carousel-control-next {
+        right: 2%;
+        width: 5%;
     }
 }
 
@@ -1692,12 +1807,15 @@ a {
         max-width: 75px;
         margin: 10px 0 20px 35px;
     }
+    .header-text__title {
+        margin-top: 50px;
+    }
     /*Modal*/
     .tab button {
         margin-right: 0;
     }
     .tabcontent {
-        height: 400px;
+        height: 75vh;
     }
     .modal-forms form {
         margin-left: 15px;
@@ -1707,6 +1825,7 @@ a {
         width: 60vw;
         padding-left: 5px;
         margin-bottom: 15px;
+        height: 10vh;
     }
     .tabcontent h4 {
         margin-top: 10px;
@@ -1938,14 +2057,25 @@ a {
         margin-bottom: 20px;
     }
     /*Footer*/
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer__about {
+        display: flex;
+        flex-direction: column;
+    }
     .footer__about li {
-        margin-left: 10px;
+        margin-left: 32.5%;
         text-align: left;
         display: flex;
     }
     .footer__about a {
         margin: 0;
         margin-right: 20px;
+    }
+    .footer__rights {
+        display: flex;
+        justify-content: center;
     }
     .footer__rights p {
         text-align: center;
